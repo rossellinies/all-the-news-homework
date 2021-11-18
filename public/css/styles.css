@@ -4,14 +4,13 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.4;
 }
 
 html {
   box-sizing: border-box;
-  background: #eee;
+  background: white;
 }
 
 *,
@@ -20,10 +19,10 @@ html {
   box-sizing: inherit;
 }
 
-.site-wrap {
+/* .site-wrap {
   max-width: 940px;
   margin: 40px auto;
-  background: white;
+  background: grey;
   padding: 1rem;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 
@@ -34,21 +33,21 @@ html {
   grid-template-areas:
     "sectionhead sectionhead"
     "entry entry";
-}
+} */
 
 p {
   margin: 1rem 0;
 }
 
 h1 {
-  color: white;
+  color: black;
   font-size: 7vw;
-  font-weight: 400;
+  font-weight: 500;
   text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-nav {
-  background: #007eb6;
+/* nav {
+  background: grey;
   width: 100%;
   transition: all 0.5s;
   position: sticky;
@@ -73,16 +72,16 @@ nav a {
 
 nav a.active {
   box-shadow: inset 0 0 0 2px white;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 nav a:not(.active):hover {
   box-shadow: inset 0 0 0 2px white;
   border-radius: 6px;
-  background-color: #00aeef;
-}
+  background-color: black;
+} */
 
-img {
+/* img {
   width: 100%;
 }
 
@@ -91,9 +90,9 @@ li.logo {
 }
 
 li.logo img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
+  width: 3rem;
+  height: 3rem;
+} */ 
 
 .entry {
   display: grid;
@@ -104,7 +103,7 @@ li.logo img {
 }
 
 .entry a {
-  color: #007eb6;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -112,18 +111,18 @@ li.logo img {
   margin-top: 0;
 }
 
-.section-head {
-  font-family: Lobster;
-  color: #007eb6;
-  font-size: 2.5rem;
+/* .section-head {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
   text-transform: capitalize;
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #007eb677;
+  border-bottom: 2px solid whitesmoke;
   grid-area: sectionhead;
-}
+} */
 
-.loading {
+/* .loading {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -139,4 +138,4 @@ li.logo img {
   overflow: hidden;
   background: url("../img/spinner.svg") 50% 50% no-repeat;
   background-size: cover;
-}
+} */

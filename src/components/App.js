@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Nav from "./Nav";
+import Header from "./header/index";
+import Nav from "./nav/index";
 import Stories from "./Stories";
+import Loading from "./loading/index"
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
 const nytapi = "RuG9N6lD1Xss81PdRbmhuiJHjuiPEt6R";
@@ -15,9 +16,9 @@ function App() {
     const url = new URL(window.location.href);
     const hash = url.hash.slice(1);
     if (hash !== "undefined") {
-      console.log(" hash ", hash);
-      setSection(hash);
-    } else {
+    //   console.log(" hash ", hash);
+    //   setSection(hash);
+    // } else {
       setSection("arts");
     }
   }, []);
@@ -42,7 +43,7 @@ function App() {
       <Nav navItems={navItems} setSection={setSection} section={section} />
 
       {loading || stories.length === 0 ? (
-        <h2>Loading...</h2>
+        <h2>Loading... </h2>
       ) : (
         <Stories stories={stories} section={section} />
       )}
