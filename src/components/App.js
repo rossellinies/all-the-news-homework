@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./header/index";
+import Loading from "./loading/index";
 import Nav from "./nav/index";
 import Stories from "./Stories";
-import Loading from "./loading/index"
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
 const nytapi = "RuG9N6lD1Xss81PdRbmhuiJHjuiPEt6R";
@@ -43,7 +43,7 @@ function App() {
       <Nav navItems={navItems} setSection={setSection} section={section} />
 
       {loading || stories.length === 0 ? (
-        <h2>Loading... </h2>
+        <h2>Wait for loading... </h2>
       ) : (
         <Stories stories={stories} section={section} />
       )}

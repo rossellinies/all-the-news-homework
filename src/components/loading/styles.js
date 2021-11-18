@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Loading = styled.a`
+export const Entry = styled.a`
     position: absolute;
     top: 0;
     width: 100vw;
@@ -10,7 +10,7 @@ export const Loading = styled.a`
     align-items: center;
   `;
   
-export const Entry = styled.div`
+export const LoadOn = styled.div`
     width: 90px;
     height: 90px;
     overflow: hidden;

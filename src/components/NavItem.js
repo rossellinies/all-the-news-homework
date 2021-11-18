@@ -1,25 +1,21 @@
 import React from "react";
-import Nav from "./nav";
+// import Nav from "./nav";
 
-import { NavAActive, NavLi } from "./nav/styles";
-
-const NavItem = ({ item }) => {
+const NavItem = ({ navItem, setSection, section }) => {
   const updateSection = (section) => {
-    item.setSection(section);
+    setSection(section);
   };
 
   return (
-    <Nav>
-    <NavLi>
-      <NavAActive
-        className={item.navItem === item.section ? "active" : ""}
-        href={`#${item.navItem}`}
-        onClick={() => updateSection(item.navItem)}
+    <li>
+      <a className={navItem === section ? "active" : ""}
+        href={`#${navItem}`}
+        onClick={() => updateSection(navItem)}
       >
-        {item.navItem}
-      </NavAActive>
-    </NavLi>
-    </Nav>
+        {navItem}
+      </a>
+    </li>
   );
 };
+
 export default NavItem;
